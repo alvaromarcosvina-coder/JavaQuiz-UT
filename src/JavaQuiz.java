@@ -2,50 +2,167 @@ import java.util.Scanner;
 
 public class JavaQuiz {
     public static void main(String[] args) {
-                Scanner teclado = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
+        // declaramos las variables constantes de los colores
+        // declaramos las variables de las respuestas
+        // declaramos la variable que va a contar los aciertos
+
+        final String VERDE = "\u001B[32m";
+        final String ROJO = "\u001B[31m";
+        final String RESET = "\u001B[0m";
+
+        String respuesta1;
+        String respuesta2;
+        String respuesta3;
+        String respuesta4;
+        String respuesta5;
+        String respuesta6;
         int aciertos = 0;
 
-        System.out.println("========== JAVAQUIZ ==========");
-        System.out.println("Concurso de preguntas sobre Java");
-        System.out.println("Responde escribiendo A, B o C.");
+        System.out.println("===== JAVAQUIZ =====");
+        System.out.println("Pregunta 1. ¿Que tipo de dato almacena numeros enteros?");
+        System.out.println("A) String");
+        System.out.println("B) double");
+        System.out.println("C) int");
+        System.out.print("Respuesta: ");
+        respuesta1 = sc.nextLine();
 
-                        System.out.println("--- RONDA 1 ---");
-            System.out.println("Pregunta 1. ¿Qué tipo de dato almacena números enteros?");
-            System.out.println("A) double");
-            System.out.println("B) int");
-            System.out.println("C) String");
-            System.out.print("Respuesta: ");
-            String respuesta = teclado.nextLine();
-            if (respuesta.equalsIgnoreCase("B")) {
-                System.out.println("¡Correcto!");
-                aciertos++;
-            } else {
-                System.out.println("Incorrecto");
+        // declaramos las condiciones para confirmar que sea correcta la opcion
 
-                            System.out.println("Pregunta 2. ¿Qué palabra clave se usa en Java para declarar una constante?");
-            System.out.println("A) var");
-            System.out.println("B) static");
-            System.out.println("C) final");
-            System.out.print("Respuesta: ");
-            String respuesta2 = teclado.nextLine();
-            if (respuesta2.equalsIgnoreCase("C")) {
-                System.out.println("¡Correcto!");
-                aciertos++;
-            } else {
-                System.out.println("Incorrecto");
-            }
-                        System.out.println("Pregunta 3. ¿Qué clase se utiliza para leer datos escritos por teclado?");
-            System.out.println("A) Scanner");
-            System.out.println("B) Printer");
-            System.out.println("C) Keyboard");
-            System.out.print("Respuesta: ");
-            String respuesta3 = teclado.nextLine();
-            if (respuesta3.equalsIgnoreCase("A")) {
-                System.out.println("¡Correcto!");
-                aciertos++;
-            } else {
-                System.out.println("Incorrecto");
-            }
+        if (respuesta1.equalsIgnoreCase("c")){
+            System.out.println(VERDE + "¡Correcto!" + RESET);
+            aciertos++;
+        }else{
+            System.out.println(ROJO + "¡Incorrecto!" + RESET); 
+        }
+
+        System.out.println("Pregunta 2. ¿Con que se comparan las cadenas en java?");
+        System.out.println("A) .equals");
+        System.out.println("B) .equalString");
+        System.out.println("C) ==");
+        System.out.print("Respuesta: ");
+        respuesta2 = sc.nextLine();
+
+        if (respuesta2.equalsIgnoreCase("a")){
+            System.out.println(VERDE + "¡Correcto!" + RESET);
+            aciertos++;
+        }else{
+            System.out.println(ROJO + "¡Incorrecto!" + RESET);
+        }
+
+        System.out.println("Pregunta 3. ¿Como se expresa la comparacion 'esto y esto' en Java?");
+        System.out.println("A) &&");
+        System.out.println("B) ||");
+        System.out.println("C) %%");
+        System.out.print("Respuesta: ");
+        respuesta3 = sc.nextLine();
+
+        if (respuesta3.equalsIgnoreCase("a")){
+            System.out.println(VERDE + "¡Correcto!" + RESET);
+            aciertos++;
+        }else{
+            System.out.println(ROJO + "¡Incorrecto!" + RESET);
+        }
+
+        System.out.println("4) ¿Que hace la función de math.random?");
+        System.out.println("A) generar un número aleatorio.");
+        System.out.println("B) generar una operacion aleatoria.");
+        System.out.println("C) generar un número aleatorio entre 0 y 1.");
+        respuesta4 = sc.nextLine();
+
+        if (respuesta4.equalsIgnoreCase("c")) {
+
+            System.out.println(VERDE + "Correcto!!!" + RESET);
+            aciertos++;
             
-            }
+        }else
+            System.out.println(ROJO + "Incorrecto!!!" + RESET);
+
+        System.out.println("5) ¿Por que numero se empieza a contar la posicion de un Array");
+        System.out.println("A) 0.");
+        System.out.println("B) 1.");
+        System.out.println("C) -1.");
+        respuesta5 = sc.nextLine();
+
+        if (respuesta5.equalsIgnoreCase("a")) {
+
+            System.out.println(VERDE + "Correcto!!!" + RESET);
+            aciertos++;
+
+        }else
+            System.out.println(ROJO + "Incorrecto!!!" + RESET);
+
+        System.out.println("6) ¿Se debe poner un break en un bucle if?");
+        System.out.println("A) No,no se puede.");
+        System.out.println("B) Si, pero no se debe.");
+        System.out.println("C) Si.");
+        respuesta6 = sc.nextLine();
+
+        if (respuesta4.equalsIgnoreCase("b")) {
+
+            System.out.println(VERDE + "Correcto!!!" + RESET);
+            aciertos++;
+
+        }else
+            System.out.println(ROJO + "Incorrecto!!!" + RESET);
+
+
+        System.out.println("Numero de aciertos: " + aciertos);
+
+
+         System.out.println("4) ¿Que hace la función de math.random?");
+        System.out.println("A) generar un número aleatorio.");
+        System.out.println("B) generar una operacion aleatoria.");
+        System.out.println("C) generar un número aleatorio entre 0 y 1.");
+        respuesta4 = sc.nextLine();
+
+        if (respuesta4.equalsIgnoreCase("c")) {
+
+            System.out.println(VERDE + "Correcto!!!" + RESET);
+            aciertos++;
+            
+        }else
+            System.out.println(ROJO + "Incorrecto!!!" + RESET);
+
+        System.out.println("5) ¿Por que numero se empieza a contar la posicion de un Array");
+        System.out.println("A) 0.");
+        System.out.println("B) 1.");
+        System.out.println("C) -1.");
+        respuesta5 = sc.nextLine();
+
+        if (respuesta5.equalsIgnoreCase("a")) {
+
+            System.out.println(VERDE + "Correcto!!!" + RESET);
+            aciertos++;
+
+        }else
+            System.out.println(ROJO + "Incorrecto!!!" + RESET);
+
+        System.out.println("6) ¿Se debe poner un break en un bucle if?");
+        System.out.println("A) No,no se puede.");
+        System.out.println("B) Si, pero no se debe.");
+        System.out.println("C) Si.");
+        respuesta6 = sc.nextLine();
+
+        if (respuesta6.equalsIgnoreCase("b")) {
+
+            System.out.println(VERDE + "Correcto!!!" + RESET);
+            aciertos++;
+
+        }else
+            System.out.println(ROJO + "Incorrecto!!!" + RESET);
+
+
+        System.out.println("Numero de aciertos: " + aciertos); 
+        
+
+        sc.close(); 
+    }
+    
+}
+        
+
+
+    
+
