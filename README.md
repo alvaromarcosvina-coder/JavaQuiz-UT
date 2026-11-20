@@ -1,18 +1,13 @@
-## Getting Started
+# JavaQuiz-UT3
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Concurso de consola con seis preguntas sobre conceptos básicos de Java, en dos rondas de tres.
+Práctica integradora UT3 de Entornos de Desarrollo (1.º DAW).
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Ejecución
+1. Abrir la carpeta en Visual Studio Code (Java Project, No Build Tools).
+2. Ejecutar `JavaQuiz.java` con el botón Run.
+3. Responder cada pregunta escribiendo A, B o C.
+  
+## Autores 
+- Integrante A: Alvaro Marcos (alvaromarcosvina-coder), ronda 1
+- Integrante B: Alexandru Tofan (aaleextf), ronda 2 y resultado final 
