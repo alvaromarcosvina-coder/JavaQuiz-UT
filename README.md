@@ -10,4 +10,4 @@ Práctica integradora UT3 de Entornos de Desarrollo (1.º DAW).
   
 ## Autores 
 - Integrante A: Alvaro Marcos (alvaromarcosvina-coder), ronda 1
-- Integrante B: Alexandru Tofan (aaleextf), ronda 2 y resultado final 
+- Integrante B: Alexandru Tofan (aaleextf), ronda 2 y resultado final    
